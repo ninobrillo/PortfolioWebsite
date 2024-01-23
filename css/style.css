@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav{
+    text-align: -webkit-center;
+    background-color: #1F203A;
+    color: #ffff;
+}
+nav img{
+    border-radius: 45%;
+    width: 12vw;
+    padding: .5rem;
+}
+#menu{
+    list-style-type: none;
+    padding-bottom: .25rem;
+    font-size: 12px;
+}
+#menu li{
+    padding: .25rem;
+    transition-duration: .15s;
+    transition-delay: .15s;
+    width: 10rem;
+}
+#menu li a{
+    padding: .25rem;
+    text-decoration: none;
+    color: #ffff;
+}
+#menu li:hover{
+    background-color: #333;
+}
+header{
+
+    background: linear-gradient(to bottom, #E2E2E2 50%, #ffff 50%);
+    position: relative;
+    height: 40vh;
+    max-height: 480px;
+}
+#headshot{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 50%;
+    margin-left: -50px;
+}
+
+header img{
+    border: 5px solid #ffff;
+    width: 50%;
+    border-radius: 50%;
+    max-width: 220px;
+}
+#headerText{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: end;
+    white-space: nowrap;
+
+
+}
+h1{
+    display: inline;
+    font-size: 1rem;
+
+}
+h1:first-of-type{
+    font-weight: normal;
+}
+h1:last-of-type{
+    text-decoration: none;
+}
+p{
+    font-size: .7em;
+}
+@media screen and (min-width: 620px){
+    #menu{
+        font-size: 1.1em;
+    }
+    #menu li{
+        width: 20rem;
+    }
+    h1{
+        font-size: 1.1em;
+    }
+    p{
+        font-size: .8em;
+    }
+    figcaption{
+        padding: 1rem;
+    }
+    figcaption p{
+        padding-top: .75rem;
+    }
+    hr{
+        margin-bottom: 1.2vw;
+    }
+}
+@media screen and (min-width: 920px){
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    #menu{
+        margin: auto 0;
+    }
+    #menu li{
+        display: inline-block;
+        font-size: 14px;
+        padding: 1em .5em;
+        border-radius: 10%;
+        width: fit-content;
+    }
+    nav img{
+        width: 25%;
+    }
+    #headerText{
+        top: 80%;
+
+    }
+
+}
+figure{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+h2{
+    font-size: 1.4rem;
+    text-align: center;
+}
+h2::first-letter{
+    color: #990708;
+    font-size: larger;
+
+}
+figure img{
+    width: 80%;
+}
+@media screen and (min-width: 920px){
+    figure{
+        display: grid;
+        grid-template-columns: 30% 30%;
+        justify-content: center;
+    }
+    figure img{
+        width: 90%;
+        margin: auto;
+    }
+    figcaption{
+        margin: auto;
+    }
+    figure:nth-child(2){
+        direction: rtl;
+    }
+    hr{
+        width: 50vw;
+        height: 2px;
+        margin: auto;
+        margin-bottom: 5vh;
+    }
+}
+#contact{
+    background-color: #1F203A;
+    color: #ffff;
+    height: 40vh;
+}
+#skills{
+    background-color: #ffff;
+    color: #ffff;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.274), #1F203A), url("../images/skills-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+}
+#skills ul{
+    padding: 1rem;
+}
+#skills ul li img{
+    width: 80%;
+    max-width: 3rem;
+    border-radius: 10%;
+}
+#skills li{
+    color: #ffff;
+    display: grid;
+    grid-template-columns: 18% 50%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem;
+
+}
+#skills h3{
+    font-size: 1rem;
+    float: right;
+}
+@media screen and (min-width: 620px){
+    #skills ul{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+}
+@media screen and (min-width: 920px){
+    #skills ul{
+        grid-template-columns: 33% 33% 33%;
+    }
+    #skills{
+        padding: 5vh;
+    }
+}
+#certificates{
+    background-color: #1F203A;
+    color: #ffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+#certificates figcaption{
+    font-size: .8rem;
+}
+#certificates img{
+    transition-duration: .3s;
+    transition-delay: .3s;
+    width: 80%;
+    max-width: 420px;
+}
+#certificates img:hover{
+    transform: scale(1.2);
+}
+@media screen and (min-width: 620px){
+
+}
+@media screen and (min-width: 920px){
+    #certificates figure{
+        display: inline-block;
+        padding: 0;
+    }
+    #certificates{
+
+        padding: 5vh;
+    }
+    #certificates h2{
+        padding-bottom: 1rem;
+    }
+}
