@@ -213,6 +213,10 @@ figure img{
     #skills{
         padding: 5vh;
     }
+    #skills ul li img{
+        width: 90%;
+        max-width: 52px;
+    }
 }
 #certificates{
     background-color: #1F203A;
@@ -247,5 +251,50 @@ figure img{
     }
     #certificates h2{
         padding-bottom: 1rem;
+    }
+}
+#contact{
+    padding: 1rem;
+    background-color: #1F203A;
+    height: fit-content;
+}
+#form form{
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: space-evenly;
+
+}
+#form form > *{
+    margin: .5rem 0;
+    padding: .5rem;
+    border: 1px solid #555;
+}
+#form input{
+    background: transparent;
+}
+#form button{
+    color: #ffff;
+    background-color: #990708;
+}
+#personal-contact{
+    display: grid;
+    grid-template-columns: 90%;
+    border: 1px solid #555;
+    width: 90%;
+    justify-items: center;
+    justify-content: center;
+    margin: auto;
+}
+#personal-contact h3{
+    padding: 20px;
+}
+#personal-contact span, address{
+    padding: 5px;
+}
+@media screen and (min-width: 920px){
+    #contact{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
     }
 }
