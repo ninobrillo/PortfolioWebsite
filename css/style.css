@@ -142,7 +142,7 @@ figure img{
     width: 80%;
 }
 @media screen and (min-width: 920px){
-    figure{
+    #main figure{
         display: grid;
         grid-template-columns: 30% 30%;
         justify-content: center;
@@ -296,5 +296,46 @@ figure img{
         display: grid;
         grid-template-columns: 40% 40%;
         justify-content: center;
+    }
+    #personal-contact{
+        padding: 5%;
+    }
+}
+footer{
+    background-color:#242323;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 50% 10% 50%;
+
+}
+
+footer figure img{
+    filter: invert(1);
+    width: 10%;
+    max-width: 45px;
+    max-height: 45px;
+    height: 10%;
+    margin: 1rem .5rem;
+}
+footer hr{
+    color: #ffff;
+    width: 50vw;
+    max-width: 250px;
+}
+span{
+    color: #ffff;
+    font-size: .75rem;
+    padding: 1rem;
+}
+@media screen and (min-width: 620px){
+    footer{
+        align-items: start;  
+    }
+}
+@media screen and (min-width: 920px){
+    footer hr{
+        width: 60vw;
+        max-width: 500px;
     }
 }
